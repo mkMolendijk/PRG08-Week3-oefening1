@@ -1,26 +1,25 @@
+///<reference path="gameobject.ts"/>
 /// <reference path="wheel.ts"/>
 
-class Car {
+class Car extends GameObject{
 
     private speed: number;
-    private div: HTMLElement;
-    private x: number;
-    private y: number;
+
     private wheel1: Wheel;
     private wheel2: Wheel;
     private state: number;
     private jumpDirection: number;
 
     constructor(parent: HTMLElement) {
-        this.div = document.createElement("car");
-        parent.appendChild(this.div);
+        super("car", parent, 0, 220, 150, 45);
+
+        // this.div = document.createElement("car");
+        // parent.appendChild(this.div);
 
         this.state = 1;
 
         this.speed = 2;
         this.jumpDirection = -3;
-        this.x = 0;
-        this.y = 220;
 
         this.wheel1 = new Wheel(this.div, 20);
         this.wheel2 = new Wheel(this.div, 100);
