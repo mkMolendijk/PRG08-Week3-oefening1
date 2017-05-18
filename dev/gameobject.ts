@@ -18,11 +18,5 @@ class GameObject {
         this.width = width;
         this.height = height;
 
-        // this.draw();
-
-    }
-
-    public draw():void {
-        this.div.style.transform = "translate(" + this.x + "px," + this.y + "px)";
     }
 }
