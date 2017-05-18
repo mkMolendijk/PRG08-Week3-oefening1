@@ -3,19 +3,16 @@
 
 class Car extends GameObject{
 
-    private speed: number;
+    public speed: number;
 
     private wheel1: Wheel;
     private wheel2: Wheel;
 
     public behavior: Behavior;
-    private jumpDirection: number;
+    public jumpDirection: number;
 
     constructor(parent: HTMLElement) {
         super("car", parent, 0, 220, 150, 45);
-
-        // this.div = document.createElement("car");
-        // parent.appendChild(this.div);
 
         this.behavior = new Driving(this);
         this.behavior.update();
@@ -25,8 +22,6 @@ class Car extends GameObject{
 
         this.wheel1 = new Wheel(this.div, 20);
         this.wheel2 = new Wheel(this.div, 100);
-
-        // window.addEventListener("keydown", (e: KeyboardEvent) => this.onKeyDown(e));
     }
 
 

@@ -165,6 +165,10 @@ var Jumping = (function () {
     }
     Jumping.prototype.update = function () {
         console.log("Boing!");
+        this.car.x += this.car.speed;
+        this.car.y += this.car.jumpDirection;
+        if (this.y < 140)
+            this.car.jumpDirection = 3;
     };
     return Jumping;
 }());
