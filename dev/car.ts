@@ -5,8 +5,8 @@ class Car extends GameObject{
 
     public speed: number;
 
-    private wheel1: Wheel;
-    private wheel2: Wheel;
+    public wheel1: Wheel;
+    public wheel2: Wheel;
 
     public behavior: Behavior;
     public jumpDirection: number;

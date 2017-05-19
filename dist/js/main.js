@@ -167,10 +167,22 @@ var Jumping = (function () {
         console.log("Boing!");
         this.car.x += this.car.speed;
         this.car.y += this.car.jumpDirection;
-        if (this.y < 140)
+        if (this.car.y < 140)
             this.car.jumpDirection = 3;
+        if (this.car.y > 217) {
+            this.car.behavior = new Crash(this.car);
+        }
     };
     return Jumping;
+}());
+var Braking = (function () {
+    function Braking(c) {
+        this.car = c;
+    }
+    Braking.prototype.update = function () {
+        console.log("Braking!");
+    };
+    return Braking;
 }());
 var Crash = (function () {
     function Crash(c) {
@@ -178,6 +190,9 @@ var Crash = (function () {
     }
     Crash.prototype.update = function () {
         console.log("Crash!");
+        this.car.wheel1.speed = -2;
+        this.car.wheel2.speed = 2;
+        this.car.div.classList.add("crashed");
     };
     return Crash;
 }());
