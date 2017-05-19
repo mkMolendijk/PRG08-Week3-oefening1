@@ -153,6 +153,9 @@ var Driving = (function () {
         if (e.key == ' ' && this.car.behavior instanceof Driving) {
             this.car.behavior = new Jumping(this.car);
         }
+        else if (e.key == 'Control' && this.car.behavior instanceof Driving) {
+            this.car.behavior = new Braking(this.car);
+        }
     };
     Driving.prototype.update = function () {
         console.log("Meep meep!");
@@ -181,6 +184,8 @@ var Braking = (function () {
     }
     Braking.prototype.update = function () {
         console.log("Braking!");
+        this.car.speed -= 0.1;
+        this.car.x += this.car.speed;
     };
     return Braking;
 }());
@@ -193,6 +198,8 @@ var Crash = (function () {
         this.car.wheel1.speed = -2;
         this.car.wheel2.speed = 2;
         this.car.div.classList.add("crashed");
+        document.getElementById("plateau").classList.add("animationpaused");
+        document.getElementById("sky").classList.add("animationpaused");
     };
     return Crash;
 }());

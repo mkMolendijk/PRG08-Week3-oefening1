@@ -24,17 +24,6 @@ class Car extends GameObject{
         this.wheel2 = new Wheel(this.div, 100);
     }
 
-
-    // private onKeyDown(e: KeyboardEvent): void {
-    //     console.log(e.key);
-    //
-    //     if(e.key == ' ' && this.state == 1) {
-    //         this.state = 2;
-    //     } else if(e.key == 'Control' && this.state == 1) {
-    //         this.state = 4;
-    //     }
-    // }
-
     public draw(): void {
         this.behavior.update();
         // if (this.state == 1) {

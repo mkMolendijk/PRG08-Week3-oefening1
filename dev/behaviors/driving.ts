@@ -14,9 +14,9 @@ class Driving implements Behavior {
         if(e.key == ' ' && this.car.behavior instanceof Driving) {
             this.car.behavior = new Jumping(this.car);
         }
-        // else if(e.key == 'Control' && this.state == 1) {
-        //     this.state = 4;
-        // }
+        else if(e.key == 'Control' && this.car.behavior instanceof Driving) {
+            this.car.behavior = new Braking(this.car);
+        }
     }
 
     public update(){
