@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534e72c9-7c28-45a1-aa3f-8a7b125f71e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/utils.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/behaviors/braking.ts" afterPath="$PROJECT_DIR$/dev/behaviors/braking.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/behaviors/crashing.ts" afterPath="$PROJECT_DIR$/dev/behaviors/crashing.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/behaviors/driving.ts" afterPath="$PROJECT_DIR$/dev/behaviors/driving.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/behaviors/jumping.ts" afterPath="$PROJECT_DIR$/dev/behaviors/jumping.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/car.ts" afterPath="$PROJECT_DIR$/dev/car.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/game.ts" afterPath="$PROJECT_DIR$/dev/game.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/main.js" afterPath="$PROJECT_DIR$/dist/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/main.js.map" afterPath="$PROJECT_DIR$/dist/js/main.js.map" />
     </list>
@@ -26,8 +27,8 @@
       <file leaf-file-name="car.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/car.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="79" />
+            <state relative-caret-position="405">
+              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -35,21 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="driving.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="driving.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/behaviors/driving.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carswitch.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/carswitch.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="14" column="91" lean-forward="false" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -68,8 +59,8 @@
       <file leaf-file-name="jumping.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/behaviors/jumping.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="60">
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -88,8 +79,18 @@
       <file leaf-file-name="game.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/game.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/utils.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -122,13 +123,15 @@
         <option value="$PROJECT_DIR$/dev/behaviors/Crash.ts" />
         <option value="$PROJECT_DIR$/dev/behavior.ts" />
         <option value="$PROJECT_DIR$/dev/gameobject.ts" />
-        <option value="$PROJECT_DIR$/dev/behaviors/jumping.ts" />
         <option value="$PROJECT_DIR$/dev/behaviors/crash.ts" />
         <option value="$PROJECT_DIR$/dev/carswitch.ts" />
         <option value="$PROJECT_DIR$/dev/behaviors/braking.ts" />
-        <option value="$PROJECT_DIR$/dev/behaviors/driving.ts" />
-        <option value="$PROJECT_DIR$/dev/car.ts" />
         <option value="$PROJECT_DIR$/dev/behaviors/crashing.ts" />
+        <option value="$PROJECT_DIR$/dev/utils.ts" />
+        <option value="$PROJECT_DIR$/dev/game.ts" />
+        <option value="$PROJECT_DIR$/dev/car.ts" />
+        <option value="$PROJECT_DIR$/dev/behaviors/jumping.ts" />
+        <option value="$PROJECT_DIR$/dev/behaviors/driving.ts" />
       </list>
     </option>
   </component>
@@ -306,12 +309,12 @@
       <updated>1495099372298</updated>
       <workItem from="1495099373587" duration="5358000" />
       <workItem from="1495191363542" duration="265000" />
-      <workItem from="1495192020696" duration="1158000" />
+      <workItem from="1495192020696" duration="3147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6781000" />
+    <option name="totallyTimeSpent" value="8770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -503,14 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/game.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/behavior.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -527,18 +522,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/behaviors/jumping.ts">
+    <entry file="file://$PROJECT_DIR$/dev/carswitch.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="15">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/behaviors/driving.ts">
+    <entry file="file://$PROJECT_DIR$/dev/block.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -553,11 +548,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/car.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="79" />
+        <state relative-caret-position="405">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/game.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -569,18 +580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/block.ts">
+    <entry file="file://$PROJECT_DIR$/dev/behaviors/jumping.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/carswitch.ts">
+    <entry file="file://$PROJECT_DIR$/dev/behaviors/driving.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="14" column="91" lean-forward="false" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
           <folding />
         </state>
       </provider>

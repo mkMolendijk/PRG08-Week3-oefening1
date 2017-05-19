@@ -1,4 +1,7 @@
+/// <reference path="utils.ts"/>
+
 class Game {
+    private static GameInstance: Game;
 
     private car : Car;
     private block : Block;
@@ -16,10 +19,16 @@ class Game {
         this.block.draw();
         requestAnimationFrame(() => this.gameLoop());
     }
-} 
 
+    public static getInstance() {
+        if (! Game.GameInstance) {
+            Game.GameInstance = new Game();
+        }
+        return Game.GameInstance;
+    }
+}
 
 // load
 window.addEventListener("load", function() {
-    let g:Game = new Game();
+    Game.getInstance();
 });

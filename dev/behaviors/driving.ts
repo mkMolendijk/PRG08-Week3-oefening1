@@ -12,6 +12,7 @@ class Driving implements Behavior {
         console.log(this.car.behavior);
 
         if(e.key == ' ' && this.car.behavior instanceof Driving) {
+            window.removeEventListener("keydown", (e: KeyboardEvent) => this.onKeyDown(e));
             this.car.behavior = new Jumping(this.car);
         }
         else if(e.key == 'Control' && this.car.behavior instanceof Driving) {

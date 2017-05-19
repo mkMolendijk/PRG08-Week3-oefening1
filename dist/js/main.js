@@ -122,6 +122,17 @@ var CarSwitch = (function () {
     };
     return CarSwitch;
 }());
+var Utils = (function () {
+    function Utils() {
+    }
+    Utils.checkCollision = function (instance1, instance2) {
+        return (instance1.x < instance2.x + instance2.width &&
+            instance1.x + instance1.width > instance2.x &&
+            instance1.y < instance2.y + instance2.height &&
+            instance1.height + instance1.y > instance2.y);
+    };
+    return Utils;
+}());
 var Game = (function () {
     function Game() {
         var _this = this;
@@ -136,10 +147,16 @@ var Game = (function () {
         this.block.draw();
         requestAnimationFrame(function () { return _this.gameLoop(); });
     };
+    Game.getInstance = function () {
+        if (!Game.GameInstance) {
+            Game.GameInstance = new Game();
+        }
+        return Game.GameInstance;
+    };
     return Game;
 }());
 window.addEventListener("load", function () {
-    var g = new Game();
+    Game.getInstance();
 });
 var Driving = (function () {
     function Driving(c) {
@@ -148,9 +165,11 @@ var Driving = (function () {
         window.addEventListener("keydown", function (e) { return _this.onKeyDown(e); });
     }
     Driving.prototype.onKeyDown = function (e) {
+        var _this = this;
         console.log(e.key);
         console.log(this.car.behavior);
         if (e.key == ' ' && this.car.behavior instanceof Driving) {
+            window.removeEventListener("keydown", function (e) { return _this.onKeyDown(e); });
             this.car.behavior = new Jumping(this.car);
         }
         else if (e.key == 'Control' && this.car.behavior instanceof Driving) {
@@ -170,10 +189,11 @@ var Jumping = (function () {
         console.log("Boing!");
         this.car.x += this.car.speed;
         this.car.y += this.car.jumpDirection;
-        if (this.car.y < 140)
+        if (this.car.y < 140) {
             this.car.jumpDirection = 3;
+        }
         if (this.car.y > 217) {
-            this.car.behavior = new Crash(this.car);
+            this.car.behavior = new Driving(this.car);
         }
     };
     return Jumping;

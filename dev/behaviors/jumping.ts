@@ -10,9 +10,13 @@ class Jumping implements Behavior {
 
         this.car.x += this.car.speed;
         this.car.y += this.car.jumpDirection;
-        if (this.car.y < 140) this.car.jumpDirection = 3;
+
+        if (this.car.y < 140) {
+            this.car.jumpDirection = 3;
+        }
+
         if (this.car.y > 217) {
-            this.car.behavior = new Crash(this.car);
+            this.car.behavior = new Driving(this.car);
         }
     }
 }
